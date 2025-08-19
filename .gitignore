@@ -1,0 +1,19 @@
+.env
+serviceAccountKey.json
+
+# Python junk
+__pycache__/
+*.pyc
+
+# macOS junk
+.DS_Store
+
+# Xcode build files
+DerivedData/
+build/
+*.xcworkspace
+*.xcodeproj/project.xcworkspace/
+*.xcuserstate
+
+# Optional: VS Code settings
+.vscode/
