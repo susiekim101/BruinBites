@@ -52,7 +52,10 @@ for row in rows:
     
     dining_data.append({
         "name": dining_name,
-        "hours": hours
+        "breakfast": hours["Breakfast"],
+        "lunch": hours["Lunch"],
+        "dinner": hours["Dinner"],
+        "extended": hours["Extended Dinner"]
     })
 
 # Store in Firebase
@@ -62,7 +65,10 @@ for entry in dining_data:
     doc_ref = collection_ref.document(entry["name"])
     doc_ref.set({
         "name": entry["name"],
-        "hours": entry["hours"]
+        "breakfast": entry["breakfast"],
+        "lunch": entry["lunch"],
+        "dinner": entry["dinner"],
+        "extended": entry["extended"]
     })
 
 print("Dining hall data successfully uplodaed to Firestore")

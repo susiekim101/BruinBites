@@ -26,6 +26,6 @@ struct SettingsRowView: View {
     }
 }
 
-#Preview {
-    SettingsRowView(ImageName: "gear", title: "Version", tintColor: Color(.systemGray))
-}
+//#Preview {
+//    SettingsRowView(ImageName: "gear", title: "Version", tintColor: Color(.systemGray))
+//}

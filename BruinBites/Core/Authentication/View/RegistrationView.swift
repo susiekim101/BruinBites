@@ -67,9 +67,7 @@ struct RegistrationView: View {
         // FIX THIS
         Button {
             Task {
-                try await viewModel.createUser(withEmail: email,
-                                               password: password,
-                                               fullname: fullname)
+                try await viewModel.createUser(withEmail: email, password: password, fullname: fullname)
             }
         } label: {
             HStack {
@@ -114,6 +112,6 @@ extension RegistrationView: AuthenticationFormProtcol {
     }
 }
 
-#Preview {
-    RegistrationView()
-}
+//#Preview {
+//    RegistrationView()
+//}

@@ -29,6 +29,6 @@ struct SignInButtonView: View {
     }
 }
 
-#Preview {
-    SignInButtonView(text: "SIGN IN", icon: "arrow.right")
-}
+//#Preview {
+//    SignInButtonView(text: "SIGN IN", icon: "arrow.right")
+//}
